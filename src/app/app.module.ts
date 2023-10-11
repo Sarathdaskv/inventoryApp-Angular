@@ -9,6 +9,14 @@ import { RoomsListComponent } from './rooms/rooms-list/rooms-list.component';
 import { HeaderComponent } from './header/header.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { RequestInterceptor } from './request.interceptor';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EmployeeComponent } from './employee/employee.component';
+import { AppNavComponent } from './app-nav/app-nav.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -16,6 +24,8 @@ import { RequestInterceptor } from './request.interceptor';
     RoomsComponent,
     RoomsListComponent,
     HeaderComponent,
+    EmployeeComponent,
+    AppNavComponent,
    
   ],
   imports: [
@@ -23,6 +33,12 @@ import { RequestInterceptor } from './request.interceptor';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
   ],
   providers: [
     {
