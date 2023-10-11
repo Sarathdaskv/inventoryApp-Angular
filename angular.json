@@ -68,10 +68,12 @@
               "browserTarget": "inventoryApp:build:production"
             },
             "development": {
-              "browserTarget": "inventoryApp:build:development"
+              "browserTarget": "inventoryApp:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
+          
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -100,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b524be5a-7083-4caf-825d-e5c730657beb"
   }
 }

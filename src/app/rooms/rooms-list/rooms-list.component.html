@@ -1,0 +1,21 @@
+<h2>{{roomTitle}}</h2>
+<div>
+    <table >
+        <tr>
+            <th>room number</th>
+            <th>room type</th>
+            <th>price</th>
+        </tr>
+        <tr *ngFor="let item of rooms let e='even' " [ngClass]="e ? 'even':'odd'" >
+            <td >{{item.roomNumber}}</td>
+            <td >{{item.roomType | uppercase}}</td>
+            <td >{{item.price}}</td>
+           <td >{{item.checkInTime | date}}</td>
+           <td><button class="btn btn-primary" (click)="selectedRooms(item)">
+            select
+           </button></td>
+        </tr>
+    </table>
+
+</div>
+
